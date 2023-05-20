@@ -48,7 +48,7 @@ function createInput(fun) {
 
 function validateText() {
     if (textInput.value == '' || textInput.value.match(/[A-Z]/g) != null
-     || textInput.value.match(/[áéíóú]/g) != null || textInput.value.match(/["#$%&/()]/) != null) {
+     || textInput.value.match(/[áéíóú]/g) != null || textInput.value.match(/["#$%&/()<>]/g) != null) {
         alert('Por favor sigue las instrucciones ingresa texto que solo que tenga minúsculas, sin acentos y que no tenga caracteres especiales')
         return false
     }
